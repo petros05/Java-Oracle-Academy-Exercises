@@ -1,4 +1,4 @@
-# 3-2 Exercises
+# 3.2 Exercises
 
 ## Exercise Files
 
