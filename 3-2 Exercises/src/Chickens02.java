@@ -29,5 +29,5 @@ public class Chickens02 {
         System.out.println("Monthly Average: "  + monthlyAverage);
         System.out.println("Monthly Profit:  $" + monthlyProfit);
     }
-    
+
 }
