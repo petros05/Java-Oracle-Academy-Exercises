@@ -16,7 +16,7 @@ class Input03 {
         System.out.println("Sum of numbers entered: " + (num1 + num2 + num3));
         
         
-        //Remember to close the Scanner
+        // Close the Scanner
         scan.close();
     }
 }
