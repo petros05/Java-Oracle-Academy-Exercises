@@ -29,9 +29,9 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-# Compiled Java files
+### Compiled Java files ###
 *.class
 
-# IntelliJ files
+### IntelliJ files ###
 .idea/
 *.iml
