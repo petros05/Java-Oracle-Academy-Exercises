@@ -1,23 +1,22 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class Scheduler {
     private League league;
-    private Scanner scanner;
 
     // Constructor
     public Scheduler(League league) {
         this.league = league;
-        this.scanner = new Scanner(System.in);
     }
 
     // Run the season
     public void runSeason() {
         System.out.println("run:");
-        
+
+        Random random = new Random();
+
         while (!league.isSeasonOver()) {
-            // Get temperature from user
-            System.out.print("Enter temperature: ");
-            double temperature = scanner.nextDouble();
+            // Get random temperature
+            int temperature = random.nextInt(100);
 
             // Check if it's freezing
             if (temperature < 32) {

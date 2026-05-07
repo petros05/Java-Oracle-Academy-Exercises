@@ -1,27 +1,12 @@
-# Soccer League Simulator
+# Soccer League
 
 ## What is This Project?
 
-This is a Java program that simulates a soccer league season. The program keeps track of 4 teams, plays games between them, and stores statistics about wins, losses, ties, and goals scored.
+Java program that simulates a soccer league season. The program keeps track of 4 teams, plays games between them, and stores statistics about wins, losses, ties, and goals scored.
 
 The season ends when there are 3 weeks in a row that are too cold to play (temperature below 32°F).
 
----
-
-## File Structure
-```
-Team/
-├── README.md
-├── src/
-│   ├── Main.java
-│   ├── League.java
-│   ├── Scheduler.java
-│   ├── Team.java
-│   └── Game.java
-└── Team.iml
-```
-
-## The Classes (What Each File Does)
+## What Does Each Files Do
 
 ### 1. **Main.java** (Starting Point)
 - Creates the soccer league
@@ -56,14 +41,17 @@ Team/
 - Prints out game details in a nice format
 
 ### 5. **Scheduler.java** (Runs the Season)
-- Asks the user to enter a temperature each week
+- Automatically generates a random temperature for each week (0-99°F)
 - If temperature is 32°F or higher:
   - Plays 2 games that week
-  - Picks random teams to play
+  - Picks random teams to play against each other
 - If temperature is below 32°F:
   - Prints "Too cold to play"
   - Counts it as a freezing week
-- When the season ends (3 freezing weeks), prints all statistics
+- When the season ends (3 consecutive freezing weeks), prints all statistics:
+  - All team stats (wins, losses, ties, goals)
+  - All game stats (game details with scores)
+  - Season summary
 
 ---
 
@@ -77,6 +65,4 @@ The temperature changes how many goals each team can score:
 - **Above 60°F**: Warm, active teams → Max 5 goals per team
 
 The actual score is random (between 0 and the maximum).
-
-
 
